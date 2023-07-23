@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+body {
+  font-family: 'Shrikhand', cursive;
+  background-color: orange;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+main {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+header h1 {
+  border: 20px double coral;
+  background-color: goldenrod;
+  padding: 10px 30px 10px 30px;
+  border-radius: 40px 40px 40px 0px;
+}
+
+header h4 {
+  align-self: center;
+}
+
+#connect {
+  font-family: 'Shrikhand', cursive;
+  background-color: wheat;
+  color: orangered;
+  padding: 2px 5px 2px 5px;
+  border: 15px double olive;
+  border-radius: 20px 20px 20px 0px;
+  height: 60%;
+  align-self: center;
+}
+
+#larmfs-div {
+  background-color: darkkhaki;
+  border-radius: 60px 60px 60px 0px;
+  border: 20px double darkgoldenrod;
+  min-height: 200px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#larmf-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.larmfcard {
+  margin: 20px;
+  background-color: darkorange;
+  border-radius: 40px 0px 40px 0px;
+}
+
+.larmfcard img {
+  max-width: 125px;
+  margin: 15px 5px;
+}
+
+.larmfcard:hover {
+  box-shadow: 5px 5px 7px goldenrod;
+}
+
+#larmf-balance {
+  margin-top: 20px;
+}
+
+.larmfcard img:hover {
+  animation-name: wiggle;
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-5deg);
+  }
+  20% {
+    transform: rotate(5deg);
+  }
+  30% {
+    transform: rotate(-5deg);
+  }
+  40% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+.larmfcard p {
+  margin: 0;
+}
+
+
